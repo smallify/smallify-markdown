@@ -24,7 +24,7 @@ function preUrl (baseRouterPrefix, route) {
   let { url } = route
 
   if (url.indexOf(baseRouterPrefix) === 0) {
-    url = url.substr(baseRouterPrefix.length + 1)
+    url = url.substr(baseRouterPrefix.length)
   }
 
   return url

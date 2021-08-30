@@ -1,6 +1,6 @@
 {
   "name": "smallify-markdown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "test": "node ./ex.js",
@@ -23,13 +23,11 @@
     "eslint-plugin-standard": "^5.0.0",
     "pino-pretty": "^3.5.0",
     "pre-commit": "^1.2.2",
-    "smallify": "^1.0.19",
+    "smallify": "^1.0.22",
     "snazzy": "^9.0.0",
     "standard": "^16.0.3",
     "typescript": "^4.1.3"
   },
   "typings": "index.d.ts",
-  "pre-commit": [
-    "lint"
-  ]
+  "pre-commit": ["lint"]
 }

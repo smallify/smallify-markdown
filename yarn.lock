@@ -2105,10 +2105,10 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
-smallify@^1.0.19:
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/smallify/-/smallify-1.0.19.tgz#4f08f70fc987333f32959c71795e77bc2afb15fe"
-  integrity sha512-czMYr8kz6lECoTiRor3zQI0Vp2LPML9qLIFgbDJGtJEhHUefVg9HuyRFIeqyw9RmVYeRSd8EmNPy8qyfbwCDMw==
+smallify@^1.0.22:
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/smallify/-/smallify-1.0.22.tgz#b0841b0a52f735c9ba8ea28472c889d3d47a9b41"
+  integrity sha512-7OpoJwxA0VgwVyJ6Z/cqFnUfhB4wg/nY1MCJ++GiwTAcrCdmecAj8bg7HCXIuWDXpLj41/22zkKii1nO7VLDyA==
   dependencies:
     ajv "^7.1.1"
     avvio "^7.2.1"
