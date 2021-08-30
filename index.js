@@ -47,12 +47,11 @@ module.exports = async function (smallify, opts) {
   fs.writeFileSync(mPath, `# ${mTitle} \r\n\r\n`)
 
   smallify.addHook('onRoute', function (route) {
-    if (route.$queue) {
-      // queue mode not create .md file
+    const md = route.markdown || route.md
+
+    if (!md) {
       return
     }
-
-    const md = route.markdown || route.md || {}
 
     const url = preUrl(smallify.$root.$routePrefix, route)
 
