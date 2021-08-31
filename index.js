@@ -3,7 +3,7 @@ const path = require('path')
 
 function isProd () {
   const env = process.env.NODE_ENV
-  return env === 'production' || env === 'prod'
+  return env === 'production'
 }
 
 function deleteDir (dir) {
