@@ -1,9 +1,9 @@
-import { Smallify, PluginDoneCallback, PluginOptions } from 'smallify'
+import { Smallify, PluginDoneCallback, PluginOptions, Route } from 'smallify'
 
 export class MarkdownOptions extends PluginOptions {
   dir?: string
   title?: string
-  customWriter?: (filePath: string) => void
+  customWriter?: (filePath: string, route: Route) => void
 }
 
 export type SmallifyMarkdown = (

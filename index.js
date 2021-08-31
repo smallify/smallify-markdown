@@ -79,7 +79,7 @@ module.exports = async function (smallify, opts) {
     fs.appendFileSync(aPath, `- \`method\`: ${route.method} \r\n\r\n`)
 
     if (cWriter) {
-      cWriter(aPath)
+      cWriter(aPath, route)
     }
 
     // beanify-ajv beanify-url
