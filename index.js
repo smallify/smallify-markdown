@@ -39,6 +39,7 @@ module.exports = async function (smallify, opts) {
   const oDir = path.join(process.cwd(), opts.dir || 'apis')
   const mPath = path.join(oDir, 'README.md')
   const mTitle = opts.title || 'API Docs'
+  const cWriter = opts.customWriter
 
   if (fs.existsSync(oDir)) {
     deleteDir(oDir)
@@ -76,6 +77,10 @@ module.exports = async function (smallify, opts) {
     fs.appendFileSync(aPath, '## Options \r\n\r\n')
     fs.appendFileSync(aPath, `- \`URL\`: ${url} \r\n`)
     fs.appendFileSync(aPath, `- \`method\`: ${route.method} \r\n\r\n`)
+
+    if (cWriter) {
+      cWriter(aPath)
+    }
 
     // beanify-ajv beanify-url
     const schema = route.schema
